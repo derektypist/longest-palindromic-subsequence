@@ -9,7 +9,7 @@ function getTextInfo() {
         txt += `Invalid Input.  Text cannot be empty.`;
     } else {
         // Get Text Information
-        txt += `You have entered the text ${myText}.`;
+        txt += `You have entered the text ${myText}.<p>`;
         txt += `The length of the longest palindromic subsequence is ${lps(myText)}.`;
     }
 
