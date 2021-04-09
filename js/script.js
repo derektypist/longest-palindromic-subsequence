@@ -5,7 +5,7 @@ function getTextInfo() {
     // Get the value of the input field
     let myText = document.getElementById("mytext").value;
     // Check if Text is Valid
-    if (myText.toString().length == 0) {
+    if (myText.length == 0) {
         txt += `Invalid Input.  Text cannot be empty.`;
     } else {
         // Get Text Information
