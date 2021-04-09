@@ -53,3 +53,9 @@ function lps(str) {
     // Return the last element of the array
     return arr[n-1];
 }
+
+// Function to Clear Information
+function clearInfo() {
+    let txt = "";
+    document.getElementById("txtinfo").innerHTML = txt;
+}
