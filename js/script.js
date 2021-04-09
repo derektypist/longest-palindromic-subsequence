@@ -12,4 +12,7 @@ function getTextInfo() {
         txt += `You have entered the text ${myText}.`;
         txt += `The length of the longest palindromic subsequence is ${lps(myText)}.`;
     }
+
+    // Display Information in the Browser
+    document.getElementById("txtinfo").innerHTML = txt;
 }
