@@ -16,3 +16,18 @@ function getTextInfo() {
     // Display Information in the Browser
     document.getElementById("txtinfo").innerHTML = txt;
 }
+
+/* 
+    Function to return the length of the longest palindromic subsequence
+    in the  string str
+*/
+function lps(str) {
+    // Convert str to lower case
+    str = str.toLowerCase();
+
+    // Get the length of the string
+    let n = str.length;
+
+    // Apply Dynamic Programming - Fill the array with 0 n times
+    let arr = Array(n).fill(0);
+}
