@@ -10,6 +10,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Set Up Header -->
+    <header class="text-center container-fluid">
+        <h1>Longest Palindromic Subsequence</h1>
+    </header>
+
+    <section class="container-fluid">
+        <!-- Set Up Form -->
+        <form>
+            <div class="form-group">
+                <label for="mytext" class="form-label">Text (Required)</label>
+                <input class="form-control" placeholder="Enter text (e.g. bobcat)" title="Enter text (e.g. bobcat)">
+            </div>
+
+            <!-- Set Up and Center Buttons -->
+            <div class="d-grid gap-2 col-4 mt-2 mx-auto">
+                <button type="button" onclick="getTextInfo()" class="btn btn-info">Submit</button>
+                <button type="reset" onclick="clearInfo()" class="btn btn-warning">Reset</button>
+            </div>
+        </form>
+    </section>
 </body>
 </html>
