@@ -30,4 +30,26 @@ function lps(str) {
 
     // Apply Dynamic Programming - Fill the array with 0 n times
     let arr = Array(n).fill(0);
+
+    // Apply For Loops
+    for (let i=n-1; i>-1; i--) {
+        let backUp = 0;
+        for (let j=i; j<n; j++) {
+            if (j==i) {
+                arr[j] = 1;
+            }
+            else if (str[i] == str[j]) {
+                let temp = arr[j];
+                arr[j] = backUp + 2;
+                backUp = temp;
+            }
+            else {
+                backUp = arr[j];
+                arr[j] = Math.max(arr[j-1],arr[j]);
+            }
+        }
+    }
+
+    // Return the last element of the array
+    return arr[n-1];
 }
