@@ -77,3 +77,22 @@ Validation of text input.  If there is no text, display the error message.
 
 This project uses the technologies of HTML5, CSS3, JavaScript, Bootstrap 5.0.0-beta3 and Google Fonts.  JavaScript is used for validating text input, dynamic programming and array manipulation.
 
+## Testing
+
+Ensure that the user stories have been met.
+
+## Deployment
+
+Deployed on [GitHub Pages](https://derektypist.github.io/longest-palindromic-subsequence) at the main branch.
+
+## Credits
+
+### Content
+
+Written by me.
+
+### Acknowledgements
+
+[Geeks for Geeks](https://www.geeksforgeeks.org/longest-palindrome-subsequence-space/) on the article of Longest Palindromic Subsequence.  Last Accessed on 10 April 2021.
+
+
