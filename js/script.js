@@ -32,8 +32,16 @@ function lps(str) {
     let arr = Array(n).fill(0);
 
     // Apply For Loops
+
+    // Pick Starting Point
     for (let i=n-1; i>-1; i--) {
         let backUp = 0;
+
+        /*
+            Pick Ending Point and see if str[i] increases length of
+            longest common subsequence ending with str[j]
+        */
+       
         for (let j=i; j<n; j++) {
             if (j==i) {
                 arr[j] = 1;
