@@ -35,25 +35,8 @@ There is a function lps, which has one string parameter `str`.  This function re
 
 Explanations
 
-    For bobcat, the length of the string is 6
-    The starting array is [0,0,0,0,0,0], i runs from n-1 to 0 and j runs from i to n-1, where n is the length of the string (e.g. 6).
-    Start with i=5, the ending point of j=5.
-    The array becomes [0,0,0,0,0,1].
-    Start with i=4, the start point of j is 4.
-    The array becomes [0,0,0,0,1,1].
-    j becomes 5.  Look at str[i], it is 'a'.  Look at str[j], it is 't'.
-    Is str[i] equal to str[j]?  No.  Set the backUp to arr[j], which is 1.
-    Look at arr[j-1], it is 1.  Find the maximum of arr[j] and arr[j-1].  It is 1.
-    The array is still [0,0,0,0,1,1].
-    Start with i=3, the start point of j is 3.
-    The array becomes [0,0,0,1,1,1]
-    j becomes 4, look at str[i], it is 'c'.  Look at str[j], it is 'a'.
-    Is str[i] equal to str[j]?  No.  Set the backUp to arr[j], which is 1.
-    Look at arr[j-1], it is 1.  Find the maximum of arr[j] and arr[j-1].  It is 1.
-    Repeat with j=5, 'c' does not equal 't'.  The array is still [0,0,0,1,1,1].
-    Start with i=2, the start point of j is 2.
-    The array becomes [0,0,1,1,1,1]
-    j becomes 3, look at str[i], it is 'b'.  Look at str[j], it is 'c'.
-    Is str[i] equal to str[j]?  No.  Set the backUp to arr[j], which is 1.
-    Look at arr[j-1], it is 1.  Find the maximum of arr[j] and arr[j-1].  It is 1.
-    Repeat with j=4 and j=5.
+    For bobcat, the length of the string is 6.  The starting array is [0,0,0,0,0,0].
+    
+    | i | j | str[i] | str[j] | arr[j-1] | arr[j] | arr |
+    | 5 | 5 | | | | | |
+    
