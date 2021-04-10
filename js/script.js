@@ -41,16 +41,21 @@ function lps(str) {
             Pick Ending Point and see if str[i] increases length of
             longest common subsequence ending with str[j]
         */
-       
+
         for (let j=i; j<n; j++) {
+            // Handling Substrings of Length 1
             if (j==i) {
                 arr[j] = 1;
             }
+
+            // Handle Case when Corner Characters are the same
             else if (str[i] == str[j]) {
                 let temp = arr[j];
                 arr[j] = backUp + 2;
                 backUp = temp;
             }
+
+            // Handle Case when Corner Characters are not the same
             else {
                 backUp = arr[j];
                 arr[j] = Math.max(arr[j-1],arr[j]);
